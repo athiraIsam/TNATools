@@ -1,0 +1,39 @@
+{
+    "AS_Image_cc67ea8af89e41a49292bc9edb38ca47": {
+        "id": "AS_Image_cc67ea8af89e41a49292bc9edb38ca47",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "LoginPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e9004e7b2c6d47b1b18e2fa1ce9f0e48"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_a3e907e468bf4237b13b866d108f1eca",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Google Login",
+            "yesLabel": "Ok",
+            "alertMessage": "Coming Soon",
+            "messageType": "constant",
+            "parentId": null,
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

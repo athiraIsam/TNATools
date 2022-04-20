@@ -1,0 +1,19 @@
+{
+    "AS_Form_a71b5aa3f5ed45cf9cec2dc4657addef": {
+        "id": "AS_Form_a71b5aa3f5ed45cf9cec2dc4657addef",
+        "type": "ACTION_SEQUENCE",
+        "name": "onAndroidMainBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "MainMenuPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f134e15dcbe94fea890bc1888899dd9e"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "AS_Form_e93e78a8e9c44335a2e3bb427f0aa1e2": {
+        "id": "AS_Form_e93e78a8e9c44335a2e3bb427f0aa1e2",
+        "type": "ACTION_SEQUENCE",
+        "name": "onSkillRowMapping",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "SkillsOnRowClickPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ecf3705d9fab44b3ae48a730cc05d0d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_d5022d992ac544c1b98458a9d3b19199",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "skillList",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_d880ed7bfd2842cab935c2cf95e42ffe",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET_a36f3e4fd5c04604ac15c98059336865",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "userProfile = this.navigationContext.variable_userProfile;\n\nskillList[\"name\"] = this.navigationContext.skillList_skillName;\nskillList[\"summary\"] = this.navigationContext.skillList_skillSummary;\nskillList[\"levelLabel\"] = this.navigationContext.skillList_skillLevelLabel;\nskillList[\"level\"] = this.navigationContext.skillList_skillLevel;\n\nself.view.skillName.text = skillList[\"name\"];\nself.view.skillSummary.text = skillList[\"summary\"];\n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

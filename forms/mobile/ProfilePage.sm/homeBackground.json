@@ -1,0 +1,64 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "10"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s4d1e8ae365048f2af5d7867a137fa95",
+    "_text_": "",
+    "_top_": {
+        "type": "number",
+        "value": "6"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "android": {
+        "centerY": {
+            "type": "string",
+            "value": ""
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s1838fafa14c4f5486c03392ba0d4ab4",
+    "id": "homeBackground",
+    "ide_onClick": "AS_Button_da6385cacdf54db49067138dba5e3c3a",
+    "info": null,
+    "isvisible": true,
+    "kuid": "dff958d72e5b418880482c72d9ff0e51",
+    "masterType": 1,
+    "name": "kony.ui.Button",
+    "parent": "flexMainTab1",
+    "pf": "ProfilePage",
+    "wType": "Button",
+    "zindex": 1
+}

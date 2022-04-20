@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": "10"
+    },
+    "_skin_": "s85294ff749d42c5a35edf4e5f74f53d",
+    "_text_": "answer 1",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "se5ef3ca28d046b8b00a1b4ea2b69440",
+    "id": "SquaredBtn1",
+    "ide_onClick": "AS_Button_ef6d3899978449258826e183520ed963",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d0217a5b794d4524930b35e0e5dfad8a",
+    "masterType": 1,
+    "name": "kony.ui.Button",
+    "parent": "answer1",
+    "pf": "skillQuestionPage",
+    "wType": "Button",
+    "zindex": 1
+}

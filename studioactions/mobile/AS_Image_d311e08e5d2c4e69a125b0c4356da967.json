@@ -1,0 +1,38 @@
+{
+    "AS_Image_d311e08e5d2c4e69a125b0c4356da967": {
+        "id": "AS_Image_d311e08e5d2c4e69a125b0c4356da967",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "imagesrc"
+        }, {
+            "datatype": "boolean",
+            "name": "issuccess"
+        }],
+        "contextObj": {
+            "name": "LoginPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e9004e7b2c6d47b1b18e2fa1ce9f0e48"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_h36f68b079fe4dfda585ea04b2f1afa1",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Facebook Login",
+            "yesLabel": "Ok",
+            "alertMessage": "Coming Soon",
+            "messageType": "constant",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

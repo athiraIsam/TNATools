@@ -1,0 +1,26 @@
+{
+    "AS_Button_c8c285ac7c2b4e1c80881e9ceaf8a514": {
+        "id": "AS_Button_c8c285ac7c2b4e1c80881e9ceaf8a514",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_ide_onClick_i400f81318d84595b5da95f3c5e6b025",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Google Login",
+            "yesLabel": "Ok",
+            "alertMessage": "Coming Soon",
+            "messageType": "constant",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

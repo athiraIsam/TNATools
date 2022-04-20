@@ -1,0 +1,116 @@
+{
+    "AS_Form_gf2f1715e8244166935ac4f4088ae919": {
+        "id": "AS_Form_gf2f1715e8244166935ac4f4088ae919",
+        "type": "ACTION_SEQUENCE",
+        "name": "onProfileEditMapping",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "ProfileEditPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c19510e0912147dca654cbe7c380716a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_b0ecda3def9f4c1c8e005d11f437f7d0",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "firstName",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_cf16be2c46034ce79e4db346ee37157b",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "lastName",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "_b3ef22c05de549a4a272d28dbd439ac5",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "value",
+                "leftValue": "this.getPreviousForm() ",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "\"ProfilePage\""
+            }],
+            "parentId": null,
+            "criteria": "all"
+        }, {
+            "id": "ADD_SNIPPET_af401317236a4449b322df0222fa9c22",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\nvar userProfile = this.navigationContext.variable_userProfile;\nfirstName = userProfile[\"firstName\"];\nlastName = userProfile[\"lastName\"];\n\n}\ncatch(ex)\n  {\n    //userProfile = undefined;\n  }\n\t",
+            "parentId": "_b3ef22c05de549a4a272d28dbd439ac5",
+            "callbackType": null
+        }, {
+            "id": "ADD_MAPPING_b0b65f9dcbdf4376ab961418792ce5bd",
+            "type": "ADD_MAPPING",
+            "mappings": {
+                "ME_Mapping_c4c47d1b54ba459eb716caaa8830939d": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_c4c47d1b54ba459eb716caaa8830939d",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "firstName",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxfirstName",
+                        "widgetPath": "this.view.tbxfirstName",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "ProfileEditPage",
+                        "widgetKUID": "hce579e54f9c43e5ad3a1d65c822cd97",
+                        "itemKUID": "c19510e0912147dca654cbe7c380716a",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a6a8fea2f1d543bf88ae5474aba4fb4f": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_a6a8fea2f1d543bf88ae5474aba4fb4f",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "lastName",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxlastName",
+                        "widgetPath": "this.view.tbxlastName",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "ProfileEditPage",
+                        "widgetKUID": "ab58532c4fd546fa834bc46bd7cf885e",
+                        "itemKUID": "c19510e0912147dca654cbe7c380716a",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_c4c47d1b54ba459eb716caaa8830939d", "ME_Mapping_a6a8fea2f1d543bf88ae5474aba4fb4f"],
+            "parentId": "_b3ef22c05de549a4a272d28dbd439ac5",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

@@ -1,0 +1,116 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s719936728e44cbdbde9875e2f36b426",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 0,
+    "data": {
+        "bgColor": "#abbdbf",
+        "chartData": {
+            "data": [
+                {
+                    "colorCode": "#1B9ED9",
+                    "label": "d1",
+                    "value": "25"
+                },
+                {
+                    "colorCode": "#76C044",
+                    "label": "d2",
+                    "value": "30"
+                },
+                {
+                    "colorCode": "#E8672B",
+                    "label": "d3",
+                    "value": "20"
+                },
+                {
+                    "colorCode": "#464648",
+                    "label": "d4",
+                    "value": "10"
+                },
+                {
+                    "colorCode": "#FFC522",
+                    "label": "d5",
+                    "value": "40"
+                }
+            ],
+            "schema": [
+                {
+                    "columnHeaderTemplate": null,
+                    "columnHeaderText": "Value",
+                    "columnHeaderType": "text",
+                    "columnID": "value",
+                    "columnText": "Not Defined",
+                    "columnType": "text",
+                    "kuid": "adb02a6b13a046f4861d9d64ef0c34ee"
+                },
+                {
+                    "columnHeaderTemplate": null,
+                    "columnHeaderText": "Color Code",
+                    "columnHeaderType": "text",
+                    "columnID": "colorCode",
+                    "columnText": "Not Defined",
+                    "columnType": "text",
+                    "kuid": "f7ad02b6f3df4493bb1ef588ab70e008"
+                },
+                {
+                    "columnHeaderTemplate": null,
+                    "columnHeaderText": "Label",
+                    "columnHeaderType": "text",
+                    "columnID": "label",
+                    "columnText": "Not Defined",
+                    "columnType": "text",
+                    "kuid": "b59fe0cbc1394743a3214ea7583c0180"
+                }
+            ]
+        },
+        "chartTitle": "Skill Analysis Questions vs Testers",
+        "xAxisTitle": "Number of Questions",
+        "yAxisTitle": "Number Of Testers"
+    },
+    "id": "horizontalbar",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d3a6cf18b8d9483f8b632f0996ab97f9",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "FlexScoreAnalysis",
+    "pf": "SkillEndOfQuestion",
+    "sourceUserWidget": "d0de1e7d4d3347fbb80bfd2430641815",
+    "wType": "UserWidgetInstance"
+}

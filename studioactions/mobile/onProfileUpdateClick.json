@@ -1,0 +1,33 @@
+{
+    "AS_Button_c84f3b4b74a24278b114af3ad05bd9b5": {
+        "id": "AS_Button_c84f3b4b74a24278b114af3ad05bd9b5",
+        "type": "ACTION_SEQUENCE",
+        "name": "onProfileUpdateClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "ProfileEditPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c19510e0912147dca654cbe7c380716a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_iba091efde544294b6a9049f7fe5c1dc",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Coming Soon",
+            "yesLabel": "ok",
+            "alertMessage": ":D",
+            "messageType": "constant",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

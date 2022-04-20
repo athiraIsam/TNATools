@@ -1,0 +1,56 @@
+{
+    "AS_Button_e746225a629b4340b57a05bf21c9fa5c": {
+        "id": "AS_Button_e746225a629b4340b57a05bf21c9fa5c",
+        "type": "ACTION_SEQUENCE",
+        "name": "onProfileBackgroundClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_c705b6f5a3c84430b6960a33fd0fd8bb",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]"
+        }, {
+            "id": "ADD_SNIPPET_c0955508e42b4334aefc37913ba12974",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flexMainTab1.homeBackground.opacity = 0 ;\nthis.view.flexMainTab2.profileBackground.opacity = 1; \nthis.view.flexMainTab3.reportBackground.opacity = 0;\nthis.view.flexMainTab4.aboutBackground.opacity = 0;\n\ntry{\n  userProfile = this.navigationContext.variable_userProfile;\n}\ncatch(ex)\n  {\n    userProfile = undefined;\n  }\n\t",
+            "parentId": null
+        }, {
+            "id": "NAVIGATE_TO_FORM__bfb569f1decb423c901e81afe1420922",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "ProfilePage",
+            "formKUID": "haaf6ec101e343d29315a1967e7acf0d",
+            "mappings": {
+                "ME_Mapping_bdb0642a7c1d4cc4980f17c8c03d0323": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_bdb0642a7c1d4cc4980f17c8c03d0323",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_bdb0642a7c1d4cc4980f17c8c03d0323"],
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"profileBackground\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

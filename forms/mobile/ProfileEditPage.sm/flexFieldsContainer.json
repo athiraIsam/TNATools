@@ -1,0 +1,449 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "82%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s1cfb166796d4c62883e181ad5001e49",
+    "_top_": {
+        "type": "string",
+        "value": "8%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "actionsInfo": {
+        "skipMapping": true
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
+    "canUpdateUI": true,
+    "children": [
+        "flexfirstName",
+        "flexlastName",
+        "flexemail",
+        "flexmobile",
+        "flexdob",
+        "flexcompanyName",
+        "flexjobRole"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "horizontalscrollindicator": true,
+    "id": "flexFieldsContainer",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b8dd8060311b4b88b05893218a2b07e5",
+    "layouttype": 4,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "ProfileEditPage",
+    "pf": "ProfileEditPage",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": true,
+    "vizProps": {
+        "dynamicPropertiesConfig": {
+            "flexKUID": "b8dd8060311b4b88b05893218a2b07e5",
+            "methodName": "create",
+            "operationName": "Users",
+            "serviceName": "UsersData",
+            "serviceType": "objectsvcs",
+            "viewType": "Entry form ui",
+            "widgetsConfig": {
+                "companyName": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "g2cc630d3563418a9174351fa559be42",
+                            "wType": "Label"
+                        },
+                        "kuid": "f2efed7f39e14805ba850da8ca5113b7",
+                        "name": {
+                            "kuid": "gc57661700704e18981c48b630e0f896",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "a63672e0fa8842399c6f9af36d4bf34f",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "dba3e084edea4ebfaf0eef7cc0eab471",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "companyName"
+                        },
+                        "generate": true,
+                        "index": 7,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "dob": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "ha988a25faea4471867b39330c91ff17",
+                            "wType": "Label"
+                        },
+                        "kuid": "d373f53df52b40e0a848c68cf6552074",
+                        "name": {
+                            "kuid": "a5bcbfa45d544a818dbfddd7db4f9110",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "b63b0d69a23a4d6184cad8c3f71ca1bb",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "a2bff2e3d55b4245b411fb510d96d5f6",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "dob"
+                        },
+                        "generate": true,
+                        "index": 6,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "email": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "i7479749df494e0fa23bb65db1fdd216",
+                            "wType": "Label"
+                        },
+                        "kuid": "j350ccf97f544cd286722e7fab55ce4a",
+                        "name": {
+                            "kuid": "g00a5d3e74e94ef0bbf7f2680405909b",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "dfff046fb8af43198c33613e377ea533",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "e365472315f04a97bf1f4aa9f6da29a1",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "email"
+                        },
+                        "generate": true,
+                        "index": 3,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "firstName": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "e27a1bd2e6884b76ba6e368cb746ef9f",
+                            "wType": "Label"
+                        },
+                        "kuid": "e291c25589a24e6795863ba370db8fb2",
+                        "name": {
+                            "kuid": "dff1df7e355e40e985d6c780dde55481",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "f2127342627f46c4bfca4ee292fdb3c9",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "hce579e54f9c43e5ad3a1d65c822cd97",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "firstName"
+                        },
+                        "generate": true,
+                        "index": 1,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "jobRole": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "aa7e62bd2c344962a03fb49effa2350b",
+                            "wType": "Label"
+                        },
+                        "kuid": "c007f41912c04dd6b3617c73bd13f58d",
+                        "name": {
+                            "kuid": "f60cf6cd45794212bd14d1ec17344dc3",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "dc2c0adc03234ccd924da2772c1f5b35",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "bb638718598d44908a15fdd507946f09",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "jobRole"
+                        },
+                        "generate": true,
+                        "index": 8,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "lastName": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "eb2343703616479ebafa354212a4896c",
+                            "wType": "Label"
+                        },
+                        "kuid": "i24642aecebc4b4aad90eaec1361eb14",
+                        "name": {
+                            "kuid": "ab51c348b71148579dbe85e03b78c2d0",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "a24a1e6426e341bc9973ef9ba8ac38ef",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "ab58532c4fd546fa834bc46bd7cf885e",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "lastName"
+                        },
+                        "generate": true,
+                        "index": 2,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "mobile": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "af20df2e7d33419cadd53ef95d7fcb1a",
+                            "wType": "Label"
+                        },
+                        "kuid": "h7bbffdd46bf47d3b0672cadfff1cba7",
+                        "name": {
+                            "kuid": "e7f708b062ae40ee99b44b96f9560e13",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "b380a4d7324d4202b539deee0f2304a3",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "ab7e9f64c72346f68b22149c8ea23807",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "mobile"
+                        },
+                        "generate": true,
+                        "index": 5,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "password": {
+                    "dataType": "string",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "d43c47d22a01464092a8c0a3765d341a",
+                            "wType": "Label"
+                        },
+                        "kuid": "e3e9e1947c5441d88c4ca8c0bd0da4f2",
+                        "name": {
+                            "kuid": "aa9ab3ffbdc04b579d8fca3375022ef6",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "f0a5756a473542d0b14f1fb752758752",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "h56027f0e8ba4a188da2d0b74cfcc73c",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "password"
+                        },
+                        "generate": true,
+                        "index": 4,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                },
+                "uid": {
+                    "dataType": "number",
+                    "layoutConfig": {
+                        "isRequired": {
+                            "kuid": "e1fe6043fd33450f8762d5ae94783f31",
+                            "wType": "Label"
+                        },
+                        "kuid": "c6ffb9f8a5394f91950d1f78811a9e08",
+                        "name": {
+                            "kuid": "a1371b1431304c6e9ef108a35c198c83",
+                            "wType": "Label"
+                        },
+                        "nameFlex": {
+                            "kuid": "fae363c2775649229c0b8dc96d70da79",
+                            "wType": "FlexContainer"
+                        },
+                        "value": {
+                            "kuid": "d0f552ba3a584733b343db2aaa6c10b8",
+                            "wType": "TextField"
+                        },
+                        "wType": "FlexContainer"
+                    },
+                    "properties": {
+                        "displayName": {
+                            "key": "text",
+                            "value": "uid"
+                        },
+                        "generate": true,
+                        "index": 0,
+                        "isReadOnly": {
+                            "key": "isReadOnly",
+                            "value": false
+                        },
+                        "isRequired": false,
+                        "placeholder": {
+                            "key": "placeholder",
+                            "value": ""
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1
+}

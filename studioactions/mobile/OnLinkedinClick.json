@@ -1,0 +1,397 @@
+{
+    "AS_Button_d4e3d8e93c2a43b5a14c5a5251eab7f2": {
+        "id": "AS_Button_d4e3d8e93c2a43b5a14c5a5251eab7f2",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnLinkedinClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "LoginPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e9004e7b2c6d47b1b18e2fa1ce9f0e48"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_fe2c8984dd6144cb9f34123734b9dd5d",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_SERVICE_bdf66b21d33149e2b4fb50b6fa09d97d",
+            "type": "INVOKE_IDENTITY_SERVICE",
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "operationname": "login",
+                "servicename": "LinkedInLogin",
+                "type": "identity",
+                "isDeepLinkRequired": false,
+                "login_type": "oauth2"
+            },
+            "parentId": null,
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "useDeviceBrowser": true,
+            "isDeepLinkRequired": false
+        }, {
+            "id": "LOADING_INDICATOR_i658bd1ddefb40a5b59340bbb4c82523",
+            "selectedOption": "show",
+            "parentId": "INVOKE_SERVICE_bdf66b21d33149e2b4fb50b6fa09d97d",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Success",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true",
+            "text": "Loading.."
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_d8b451663d0e4b679fd6d1d525d071ee",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "firstName",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": "INVOKE_SERVICE_bdf66b21d33149e2b4fb50b6fa09d97d",
+            "callbackType": "Success"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_ja493e7b2c5c43bca6d2875b2edda5f7",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "lastName",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": "INVOKE_SERVICE_bdf66b21d33149e2b4fb50b6fa09d97d",
+            "callbackType": "Success"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_d63dbe4be0f444ab99268619573c2540",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "loginType",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": "INVOKE_SERVICE_bdf66b21d33149e2b4fb50b6fa09d97d",
+            "callbackType": "Success"
+        }, {
+            "id": "ADD_SNIPPET_hb440b730cbb4213bfccd4099a6866ba",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "// Get user profile",
+            "parentId": "INVOKE_SERVICE_bdf66b21d33149e2b4fb50b6fa09d97d",
+            "callbackType": "Success"
+        }, {
+            "id": "GET_USER_PROFILE_bd483694324e4ad2a3ebf3ac3e2e2bcd",
+            "type": "GET_USER_PROFILE",
+            "parentId": "INVOKE_SERVICE_bdf66b21d33149e2b4fb50b6fa09d97d",
+            "callbackType": "Success",
+            "serviceName": "LinkedInLogin"
+        }, {
+            "id": "_hd476d4e15054efcb795a355d3ab8bb1",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "value",
+                "leftValue": "response",
+                "operator": "!==",
+                "rightValueType": "value",
+                "rightValue": "null"
+            }],
+            "parentId": "GET_USER_PROFILE_bd483694324e4ad2a3ebf3ac3e2e2bcd",
+            "callbackType": "Success",
+            "criteria": "all"
+        }, {
+            "id": "ADD_SNIPPET_jf193e773f104146823d16b245592ec0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "firstName = userProfile[\"firstName\"] = response.firstName.localized.en_US;\nlastName = userProfile[\"lastName\"] = response.lastName.localized.en_US;\nloginType = userProfile[\"loginType\"] = \"linkedin\";\n//self.view.emailTextbox.text = userProfile[\"firstName\"];\n//Check if exist in database",
+            "parentId": "_hd476d4e15054efcb795a355d3ab8bb1",
+            "callbackType": null
+        }, {
+            "id": "INVOKE_SERVICE_b28d84a7da6e420899448d25f6855732",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "Users",
+                "type": "objectsvcs",
+                "objectname": "Profile",
+                "serviceid": "21ea5071-9940-4819-ba2b-2693079a53c9",
+                "methodname": "get"
+            },
+            "parentId": "_hd476d4e15054efcb795a355d3ab8bb1",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }, {
+            "id": "_f02d6a354f1c4f2cbbc614b9454cc196",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "value",
+                "leftValue": "Profile.opstatus",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "0"
+            }],
+            "parentId": "INVOKE_SERVICE_b28d84a7da6e420899448d25f6855732",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "ADD_SNIPPET_cd454551345042fd92f4739fba62c2bf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "// get all User.Profile data\nvar tempProfile = Profile.records;\nvar isExist = false;\n\nfor (var profile in tempProfile) \n{\n  if(userProfile[\"loginType\"] == tempProfile[profile][\"LoginType\"])\n    {\n        if(userProfile[\"firstName\"] == tempProfile[profile][\"FirstName\"] && userProfile[\"lastName\"] == tempProfile[profile][\"LastName\"])\n          {\n            isExist = true;\n          \t break;\n          }\n    }\n \n }",
+            "parentId": "_f02d6a354f1c4f2cbbc614b9454cc196",
+            "callbackType": null
+        }, {
+            "id": "_c85641b6628244a4a518c275f77352a3",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "value",
+                "leftValue": "isExist",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "true"
+            }],
+            "parentId": "_f02d6a354f1c4f2cbbc614b9454cc196",
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "_bcb48795859044e886635cfda53cc4a1",
+            "type": "ELSE_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "",
+                "operator": "===",
+                "rightValueType": "widgetprop",
+                "rightValue": ""
+            }],
+            "parentId": "_f02d6a354f1c4f2cbbc614b9454cc196",
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "INVOKE_SERVICE_e2b9d15816ee48b492eb37a9f397f25f",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {
+                "ME_Mapping_fb254afaa5f94c98b7ba08412193d330": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_fb254afaa5f94c98b7ba08412193d330",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "firstName",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "FirstName",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Users",
+                            "type": "objectsvcs",
+                            "objectname": "Profile",
+                            "serviceid": "21ea5071-9940-4819-ba2b-2693079a53c9",
+                            "methodname": "create"
+                        }
+                    }
+                },
+                "ME_Mapping_h3daddf4eb8f4e41bd21ce2a877e762a": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_h3daddf4eb8f4e41bd21ce2a877e762a",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "lastName",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "LastName",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Users",
+                            "type": "objectsvcs",
+                            "objectname": "Profile",
+                            "serviceid": "21ea5071-9940-4819-ba2b-2693079a53c9",
+                            "methodname": "create"
+                        }
+                    }
+                },
+                "ME_Mapping_dc6bf355eb99463ba3f559a2b2892709": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_dc6bf355eb99463ba3f559a2b2892709",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "loginType",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "LoginType",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "Users",
+                            "type": "objectsvcs",
+                            "objectname": "Profile",
+                            "serviceid": "21ea5071-9940-4819-ba2b-2693079a53c9",
+                            "methodname": "create"
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_fb254afaa5f94c98b7ba08412193d330", "ME_Mapping_h3daddf4eb8f4e41bd21ce2a877e762a", "ME_Mapping_dc6bf355eb99463ba3f559a2b2892709"],
+            "serviceconfig": {
+                "servicename": "Users",
+                "type": "objectsvcs",
+                "objectname": "Profile",
+                "serviceid": "21ea5071-9940-4819-ba2b-2693079a53c9",
+                "methodname": "create"
+            },
+            "parentId": "_bcb48795859044e886635cfda53cc4a1",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }, {
+            "id": "_gda80656b42b485fa72dbb9514a6c29c",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "value",
+                "leftValue": "Profile.opstatus",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "0"
+            }],
+            "parentId": "INVOKE_SERVICE_e2b9d15816ee48b492eb37a9f397f25f",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "LOADING_INDICATOR_c03280d2fec94ef6a151ff21535b2c3e",
+            "selectedOption": "dismiss",
+            "parentId": "_gda80656b42b485fa72dbb9514a6c29c",
+            "type": "LOADING_INDICATOR",
+            "callbackType": null,
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "NAVIGATE_TO_FORM__c9fd9949546d45308e9fccc921cf7ef6",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "MainMenuPage",
+            "formKUID": "f134e15dcbe94fea890bc1888899dd9e",
+            "mappings": {
+                "ME_Mapping_bb6eab9d4e0f447d94a823f41faec06b": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_bb6eab9d4e0f447d94a823f41faec06b",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_bb6eab9d4e0f447d94a823f41faec06b"],
+            "parentId": "_gda80656b42b485fa72dbb9514a6c29c",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"\"\n    }\n}",
+            "isCustomInput": false
+        }, {
+            "id": "LOADING_INDICATOR_i656b6ba8cc54883a721de82c7d34341",
+            "selectedOption": "dismiss",
+            "parentId": "_c85641b6628244a4a518c275f77352a3",
+            "type": "LOADING_INDICATOR",
+            "callbackType": null,
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "ADD_SNIPPET_c7f87abcf82f4c1eb25fc3796f08e628",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "  var ntf = new voltmx.mvc.Navigation(\"MainMenuPage\");\n            ntf.navigate({\n                \"variable_userProfile\": userProfile,\n                \"_meta_\": {\n                    \"eventName\": \"onClick\",\n                    \"widgetId\": \"linkedInLoginBackground\"\n                }\n            });",
+            "parentId": "_c85641b6628244a4a518c275f77352a3",
+            "callbackType": null
+        }, {
+            "id": "SHOW_ALERT_c09333ec9eaa408ebc53019eda9357c9",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_ERROR",
+            "alertTitle": "Login Failure",
+            "yesLabel": "Ok",
+            "alertMessage": "Unable to get user profile",
+            "messageType": "constant",
+            "parentId": "GET_USER_PROFILE_bd483694324e4ad2a3ebf3ac3e2e2bcd",
+            "callbackType": "Failure",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "LOADING_INDICATOR_ic0b9b9f521d4e5da6485a3535ca44df",
+            "selectedOption": "dismiss",
+            "parentId": "GET_USER_PROFILE_bd483694324e4ad2a3ebf3ac3e2e2bcd",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Failure",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "SHOW_ALERT_aa5beb1485c949c8b4865123e74ff895",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_ERROR",
+            "alertTitle": "Login Failure",
+            "yesLabel": "Ok",
+            "alertMessage": "LinkedIn Login failure!",
+            "messageType": "constant",
+            "parentId": "INVOKE_SERVICE_bdf66b21d33149e2b4fb50b6fa09d97d",
+            "callbackType": "Failure",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

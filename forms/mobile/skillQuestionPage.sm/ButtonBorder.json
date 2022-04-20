@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_skin_": "s756807af83544ceb798b3a89aa689aa",
+    "_text_": "Next",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s3266a3c5c4043788f5cb4d88de60e38",
+    "id": "ButtonBorder",
+    "ide_onClick": "AS_Button_gc13006f593c47f197b555d30b9dd134",
+    "info": null,
+    "isvisible": true,
+    "kuid": "abe05881594e4ae4b87ba5de37bad34c",
+    "masterType": 1,
+    "name": "kony.ui.Button",
+    "parent": "NextButton",
+    "pf": "skillQuestionPage",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,206 @@
+{
+    "AS_Segment_da3e13e1024f45ab953b2e30a90c989f": {
+        "id": "AS_Segment_da3e13e1024f45ab953b2e30a90c989f",
+        "type": "ACTION_SEQUENCE",
+        "name": "onSkillListClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "SkillMainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c05a66a1fa7d441885077dd7cde965b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_h72d452ce7424ce8920620c4ff7eb451",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]"
+        }, {
+            "id": "ADD_SNIPPET_a4ae63597c5c4857afa05068f8e964f9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "userProfile = this.navigationContext.variable_userProfile;"
+        }, {
+            "id": "NAVIGATE_TO_FORM__c75f983e9d5f4608966cde7b2e2361cb",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "SkillsOnRowClickPage",
+            "formKUID": "ecf3705d9fab44b3ae48a730cc05d0d9",
+            "mappings": {
+                "ME_Mapping_f9eec94c1eb944698bf8054f34638e31": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_f9eec94c1eb944698bf8054f34638e31",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "selectedRowItems",
+                        "propertyKey": "skillList_selectedRowItems",
+                        "widgetId": "skillList",
+                        "widgetPath": "this.view.skillList",
+                        "widgetType": "Segment",
+                        "dataType": "collection",
+                        "itemId": "SkillMainPage",
+                        "widgetKUID": "hd06cac338cf45ecb9187fa403db97ef",
+                        "itemKUID": "c05a66a1fa7d441885077dd7cde965b5",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_df6a878f623c45319127af232fc43b82": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_df6a878f623c45319127af232fc43b82",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "skillName",
+                        "propertyKey": "skillList_skillName",
+                        "widgetId": "skillList",
+                        "widgetPath": "this.view.skillList",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "SkillMainPage",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "hd06cac338cf45ecb9187fa403db97ef",
+                        "itemKUID": "c05a66a1fa7d441885077dd7cde965b5",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "a8716160793b41fc835f46da07713ba3",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.skillName"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_df50cd64198749d09197eb7f31a1f176": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_df50cd64198749d09197eb7f31a1f176",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "skillSummary",
+                        "propertyKey": "skillList_skillSummary",
+                        "widgetId": "skillList",
+                        "widgetPath": "this.view.skillList",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "SkillMainPage",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "hd06cac338cf45ecb9187fa403db97ef",
+                        "itemKUID": "c05a66a1fa7d441885077dd7cde965b5",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "ab9723f25b9344e2aff00b69158ba211",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.skillSummary"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b15a09e8a04846f5bf9732f848042ddd": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_b15a09e8a04846f5bf9732f848042ddd",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "skillLevelLabel",
+                        "propertyKey": "skillList_skillLevelLabel",
+                        "widgetId": "skillList",
+                        "widgetPath": "this.view.skillList",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "SkillMainPage",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "hd06cac338cf45ecb9187fa403db97ef",
+                        "itemKUID": "c05a66a1fa7d441885077dd7cde965b5",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "i309aa0bcaa9410e91e06d9756c525e2",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.skillLevelLabel"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d97be7dac8ea42b888ca31e4144c139e": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_d97be7dac8ea42b888ca31e4144c139e",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "skillLevel",
+                        "propertyKey": "skillList_skillLevel",
+                        "widgetId": "skillList",
+                        "widgetPath": "this.view.skillList",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "SkillMainPage",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "hd06cac338cf45ecb9187fa403db97ef",
+                        "itemKUID": "c05a66a1fa7d441885077dd7cde965b5",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "i0265f651a304bb49306307078339884",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.skillLevel"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ab2ec22893534262813e352f8f229435": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_ab2ec22893534262813e352f8f229435",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_f9eec94c1eb944698bf8054f34638e31", "ME_Mapping_df6a878f623c45319127af232fc43b82", "ME_Mapping_df50cd64198749d09197eb7f31a1f176", "ME_Mapping_b15a09e8a04846f5bf9732f848042ddd", "ME_Mapping_d97be7dac8ea42b888ca31e4144c139e", "ME_Mapping_ab2ec22893534262813e352f8f229435"],
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"skillList_selectedRowItems\": self.view.skillList.selectedRowItems,\n    \"skillList_skillName\": voltmx.visualizer.getPropertyValue(self.view.skillList.selectedRowItems[0][\"skillName\"], \"text\"),\n    \"skillList_skillSummary\": voltmx.visualizer.getPropertyValue(self.view.skillList.selectedRowItems[0][\"skillSummary\"], \"text\"),\n    \"skillList_skillLevelLabel\": voltmx.visualizer.getPropertyValue(self.view.skillList.selectedRowItems[0][\"skillLevelLabel\"], \"text\"),\n    \"skillList_skillLevel\": voltmx.visualizer.getPropertyValue(self.view.skillList.selectedRowItems[0][\"skillLevel\"], \"text\"),\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onRowClick\",\n        \"widgetId\": \"skillList\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

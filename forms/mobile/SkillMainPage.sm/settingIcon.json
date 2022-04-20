@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_skin_": "sdb9cf089cfe48d6be79ad7554c16eba",
+    "_src_": "option4.png",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "75dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "id": "settingIcon",
+    "ide_onTouchStart": "AS_Image_fdd6d486d818450084a51c2434bf7d0d",
+    "imagescalemode": 1,
+    "info": null,
+    "invokedProperty": "src",
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "jc5e63d45f4e442998972b5e8c613acf",
+    "name": "kony.ui.Image2",
+    "parent": "FlexHeader",
+    "pf": "SkillMainPage",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

@@ -1,0 +1,55 @@
+{
+    "AS_Button_da6385cacdf54db49067138dba5e3c3a": {
+        "id": "AS_Button_da6385cacdf54db49067138dba5e3c3a",
+        "type": "ACTION_SEQUENCE",
+        "name": "onMainMenuBackground",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_ac24fdef76d74ada9f5efd14acbb4568",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "simple",
+            "datatype": "collection",
+            "value": "[]"
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_j5534c8689004fa9a6d6e1bf2174935a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flexMainTab1.homeBackground.opacity = 1 ;\nthis.view.flexMainTab2.profileBackground.opacity = 0; \nthis.view.flexMainTab3.reportBackground.opacity = 0;\nthis.view.flexMainTab4.aboutBackground.opacity = 0;\n\nuserProfile = this.navigationContext.variable_userProfile;"
+        }, {
+            "id": "NAVIGATE_TO_FORM__a4ec31b5a39b468e9d0f76f763f51783",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "MainMenuPage",
+            "formKUID": "f134e15dcbe94fea890bc1888899dd9e",
+            "mappings": {
+                "ME_Mapping_ja484d947bf84ddf8f2398e65229bd84": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_ja484d947bf84ddf8f2398e65229bd84",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_ja484d947bf84ddf8f2398e65229bd84"],
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"homeBackground\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

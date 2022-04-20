@@ -1,0 +1,61 @@
+{
+    "AS_Button_i1269b8e967c414cbdb02baea0ae8be4": {
+        "id": "AS_Button_i1269b8e967c414cbdb02baea0ae8be4",
+        "type": "ACTION_SEQUENCE",
+        "name": "onSkillClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "MainMenuPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f134e15dcbe94fea890bc1888899dd9e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_b4a87324440248308c670831a7f5f021",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]"
+        }, {
+            "id": "ADD_SNIPPET_df7dbf6d8992461295b89d634d8fce24",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\nuserProfile = this.navigationContext.variable_userProfile;\n\n}\ncatch(ex)\n  {\n\n  }\n\t"
+        }, {
+            "id": "NAVIGATE_TO_FORM__e60f5c8140cb4f41bcf691d71854370b",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "SkillMainPage",
+            "formKUID": "c05a66a1fa7d441885077dd7cde965b5",
+            "mappings": {
+                "ME_Mapping_eb3a3173866444119f96a99959107528": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_eb3a3173866444119f96a99959107528",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_eb3a3173866444119f96a99959107528"],
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"SkillsButton\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

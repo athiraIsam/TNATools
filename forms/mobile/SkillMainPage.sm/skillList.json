@@ -1,0 +1,355 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "Answer11": {
+                "text": "Pressing '+' + down"
+            },
+            "Answer12": {
+                "text": "Pressing  F5"
+            },
+            "Answer13": {
+                "text": "Using the Selection Pane"
+            },
+            "Answer21": {
+                "text": "Merge Formatting command"
+            },
+            "Answer22": {
+                "text": "Format Painter tool"
+            },
+            "Answer23": {
+                "text": "Copy and Paste Styles command"
+            },
+            "CorrectAnswer1": {
+                "text": "Using the Selection Pane"
+            },
+            "CorrectAnswer2": {
+                "text": "Format Painter tool"
+            },
+            "NumberOfTaken": {
+                "text": "0"
+            },
+            "Question1": {
+                "text": "How can I directly go to a specific page in a document?"
+            },
+            "Question2": {
+                "text": "Which feature allows you to copy attributes of selected text and apply them to another selection?"
+            },
+            "skillLevel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Basic"
+            },
+            "skillLevelLabel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Level: "
+            },
+            "skillName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Microsoft Word Skills Assessment Test"
+            },
+            "skillSummary": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Microsoft Word assessment test is created & validated by experienced Subject Matter Experts (SME) to assess the expertise of candidates in MS Word basics as per the industry standards. Microsoft word skills test helps recruiters and hiring managers to assess & hire MS Word professionals. "
+            }
+        },
+        {
+            "Answer11": {
+                "text": "Insert a page break."
+            },
+            "Answer12": {
+                "text": "Press Shift + Enter (Shift + Return)."
+            },
+            "Answer13": {
+                "text": "Insert a column break."
+            },
+            "Answer21": {
+                "text": "Click Layout > Text > Text from File."
+            },
+            "Answer22": {
+                "text": "Click Insert > Text > Building Blocks Organizer."
+            },
+            "Answer23": {
+                "text": "Click Insert > Text > Text from File."
+            },
+            "CorrectAnswer1": {
+                "text": "Insert a page break."
+            },
+            "CorrectAnswer2": {
+                "text": "Click Insert > Text > Text from File."
+            },
+            "NumberOfTaken": {
+                "text": "0"
+            },
+            "Question1": {
+                "text": "How do you insert the content of an existing Word document into your current Word document?"
+            },
+            "Question2": {
+                "text": "How do you insert the content of an existing Word document into your current Word document?"
+            },
+            "skillLevel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Entry/Mid/Expert"
+            },
+            "skillLevelLabel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Level:"
+            },
+            "skillName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Microsoft Word 2013 Online Test"
+            },
+            "skillSummary": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Microsoft Word 2013 is one of the latest versions of Microsoft Office 2013 suite. It is a successor to Microsoft Word 2010 and a predecessor to Microsoft Word 2016. It includes the extended file format support and user interface among its new features."
+            }
+        },
+        {
+            "Answer11": {
+                "text": "Background"
+            },
+            "Answer12": {
+                "text": "Watermark"
+            },
+            "Answer13": {
+                "text": "Imagemark"
+            },
+            "Answer21": {
+                "text": "Design > Size."
+            },
+            "Answer22": {
+                "text": "File > Page Setup."
+            },
+            "Answer23": {
+                "text": "Layout > Size."
+            },
+            "CorrectAnswer1": {
+                "text": "Watermark"
+            },
+            "CorrectAnswer2": {
+                "text": "Layout > Size."
+            },
+            "NumberOfTaken": {
+                "text": "0"
+            },
+            "Question1": {
+                "text": "Which feature lets you place a ghosted logo or text behind the regular text on your document?"
+            },
+            "Question2": {
+                "text": "Where do you select the paper size for a document?"
+            },
+            "skillLevel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Advanced"
+            },
+            "skillLevelLabel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Level:"
+            },
+            "skillName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Microsoft Word Practical Test "
+            },
+            "skillSummary": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Microsoft Word practical test designed & developed by experienced Subject Matter Experts (SME) to validate the advanced Microsoft Word skills of candidates as per industry standards. Advanced Word test checks the superior level of a candidate in creating the Microsoft Word template, page layout designing, formatting, editing, graphic objects, and tables. "
+            }
+        },
+        {
+            "Answer11": {
+                "text": "Drag to Home tab."
+            },
+            "Answer12": {
+                "text": "Add to chooser."
+            },
+            "Answer13": {
+                "text": "Pin to list."
+            },
+            "Answer21": {
+                "text": "Insert tab."
+            },
+            "Answer22": {
+                "text": "Design tab."
+            },
+            "Answer23": {
+                "text": "References tab."
+            },
+            "CorrectAnswer1": {
+                "text": "Pin to list."
+            },
+            "CorrectAnswer2": {
+                "text": "References tab."
+            },
+            "NumberOfTaken": {
+                "text": "0"
+            },
+            "Question1": {
+                "text": "Which option lets you mark your favorite templates for quick reuse in the future?"
+            },
+            "Question2": {
+                "text": "If you want to add a caption to a table, where should you look?"
+            },
+            "skillLevel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Senior"
+            },
+            "skillLevelLabel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Level:"
+            },
+            "skillName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Microsoft Word and Excel Assessment Test"
+            },
+            "skillSummary": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MS Word and Excel test for employment helps recruiters and hiring managers to assess MS Excel & Word skills. The Microsoft Word and Excel test is designed & validated by experienced Subject Matter Experts (SME) to evaluate MS Excel as well as MS Word skills of the candidate as per the industry standards.    "
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "91.21%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_render_": true,
+    "_top_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "android": {
+        "render": true
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "03",
+    "disabledSkins": {
+        "alternateRowSkin": "s21b9bf6543a4b1fbbbe48c730f32b8e",
+        "widgetSkin": "sddaefdf441f44cc86a87253cc7d81b9"
+    },
+    "enablereordering": false,
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "d5078c6ce8724874b2f9f4317ded3d2c",
+    "groupcells": true,
+    "hasSections": false,
+    "hiddencolumns": {
+        "Answer11": "text",
+        "Answer12": "text",
+        "Answer13": "text",
+        "Answer21": "text",
+        "Answer22": "text",
+        "Answer23": "text",
+        "CorrectAnswer1": "text",
+        "CorrectAnswer2": "text",
+        "NumberOfTaken": "text",
+        "Question1": "text",
+        "Question2": "text"
+    },
+    "id": "skillList",
+    "ide_onRowClick": "AS_Segment_da3e13e1024f45ab953b2e30a90c989f",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        },
+        "render": true
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "hd06cac338cf45ecb9187fa403db97ef",
+    "masterType": 1,
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom",
+        "vdistance": 1
+    },
+    "parent": "SkillMainPage",
+    "pf": "SkillMainPage",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "d5078c6ce8724874b2f9f4317ded3d2c",
+    "rowcounter": 3,
+    "rowfocusskin": "sa8247187d7144d7bd43d66c6bc15786",
+    "rowskin": "sd403cfd3657446188bf3851dc89a9e3",
+    "rowtemplate": "FBox0cc46bbbc59a641",
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "s23d8f50581945109d8c5b851d791e4b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "singleselect",
+    "selectionbehaviorconfig": {},
+    "separatorcolor": "aaaaaa64",
+    "separatorrequired": true,
+    "separatorthickness": 19,
+    "showscrollbars": true,
+    "spaan": {
+        "render": true
+    },
+    "spaip": {
+        "render": true
+    },
+    "spawinphone8": {
+        "render": true
+    },
+    "swipeContext": {
+        "currentPage": 0,
+        "imageWidth": 828,
+        "widthRatio": 0
+    },
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetdatamap": {
+        "FlexSkillList": "FlexSkillList",
+        "skillLevel": "skillLevel",
+        "skillLevelLabel": "skillLevelLabel",
+        "skillName": "skillName",
+        "skillSummary": "skillSummary"
+    },
+    "winphone8": {
+        "render": true
+    },
+    "zindex": 1
+}

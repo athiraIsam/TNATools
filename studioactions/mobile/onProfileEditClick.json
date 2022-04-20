@@ -1,0 +1,67 @@
+{
+    "AS_Image_a9fd2728567a47718c2e0ebf0b57c8ac": {
+        "id": "AS_Image_a9fd2728567a47718c2e0ebf0b57c8ac",
+        "type": "ACTION_SEQUENCE",
+        "name": "onProfileEditClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "ProfilePage",
+            "type": "forms",
+            "platform": null,
+            "KUID": "haaf6ec101e343d29315a1967e7acf0d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_ea4cc9ae0f854ade8e4dc9f59d72cfef",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]"
+        }, {
+            "id": "ADD_SNIPPET_dff0b2716ee746b995b3e075aea71b75",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "userProfile = this.navigationContext.variable_userProfile;"
+        }, {
+            "id": "NAVIGATE_TO_FORM__f095e9048cf6433b9d0489a5b059c231",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "ProfileEditPage",
+            "formKUID": "c19510e0912147dca654cbe7c380716a",
+            "mappings": {
+                "ME_Mapping_a6b9aaf84d284321bfa80d1492f25476": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_a6b9aaf84d284321bfa80d1492f25476",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_a6b9aaf84d284321bfa80d1492f25476"],
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onTouchStart\",\n        \"widgetId\": \"editDetails\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "AS_Image_ceec0f9d3c3c4c5494c2c0d279191f1b": {
+        "id": "AS_Image_ceec0f9d3c3c4c5494c2c0d279191f1b",
+        "type": "ACTION_SEQUENCE",
+        "name": "onProfileEditBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "ProfileEditPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c19510e0912147dca654cbe7c380716a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_hea9df4c0b3b45aabf9ef9660c28ee01",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]"
+        }, {
+            "id": "ADD_SNIPPET_d76cfc0b2ce14ccc9320e735936265cb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\nuserProfile = this.navigationContext.variable_userProfile;\n\n}\ncatch(ex)\n  {\n    userProfile = undefined;\n  }\n\t"
+        }, {
+            "id": "NAVIGATE_TO_FORM__f3c333be2c354f9ebaf9222907c7b06f",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "ProfilePage",
+            "formKUID": "haaf6ec101e343d29315a1967e7acf0d",
+            "mappings": {
+                "ME_Mapping_d38aa56654a24f54836ba571eb87be3a": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_d38aa56654a24f54836ba571eb87be3a",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_d38aa56654a24f54836ba571eb87be3a"],
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onTouchStart\",\n        \"widgetId\": \"back\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

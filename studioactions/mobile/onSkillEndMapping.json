@@ -1,0 +1,139 @@
+{
+    "AS_Form_j5ff0879238f4dc5b9bf4176bfcbb0fa": {
+        "id": "AS_Form_j5ff0879238f4dc5b9bf4176bfcbb0fa",
+        "type": "ACTION_SEQUENCE",
+        "name": "onSkillEndMapping",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "SkillEndOfQuestion",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b877be7c228f4cb6ae2936a86e349892"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_f8d47f76388a4db6821e36ecb205272a",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "skillName",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_b101a6c71a0b4498b0423db42b7c49c0",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "candidateEmail",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_f74c24a785bd4a8c920fb0f819858774",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "candidateName",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET_jcacf507312c4fe1b0e2e358f99e931a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var correctAnswer= this.navigationContext.variable_answerPerTotal.toString();\nvar percentage = (correctAnswer/2)*100;\n\nvar skillInfo = this.navigationContext.variable_skillList ;\nvar users= this.navigationContext.variable_userProfile;\n\nskillName = skillInfo[0][\"skillName\"];\ncandidateName = users[\"firstName\"];\ncandidateEmail = users[\"email\"];\n\nthis.view.marks.text = \"You got \" + correctAnswer + \" Correct Answer. Your marks is \"+ percentage + \"%.\";\n//",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_MAPPING_hda70cfed63947f4a37275b270083a75",
+            "type": "ADD_MAPPING",
+            "mappings": {
+                "ME_Mapping_e9f5c3cc99f84ec09494d64088def04f": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_e9f5c3cc99f84ec09494d64088def04f",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "skillName",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "testName",
+                        "widgetPath": "this.view.testName",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "SkillEndOfQuestion",
+                        "widgetKUID": "dd9103603f4f4d2f84ec6a487752e3a0",
+                        "itemKUID": "b877be7c228f4cb6ae2936a86e349892",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_f40b0bed8b56474c88d8f1f87c788191": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_f40b0bed8b56474c88d8f1f87c788191",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "candidateEmail",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "testerEmail",
+                        "widgetPath": "this.view.testerEmail",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "SkillEndOfQuestion",
+                        "widgetKUID": "e9924c26f8064c4cb7643762b256c9cc",
+                        "itemKUID": "b877be7c228f4cb6ae2936a86e349892",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ccf07a68c9a14d38a7b13d27888cc98f": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_ccf07a68c9a14d38a7b13d27888cc98f",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "candidateName",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "testerName",
+                        "widgetPath": "this.view.testerName",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "SkillEndOfQuestion",
+                        "widgetKUID": "ga7d58169cb94f41af190c265d305e92",
+                        "itemKUID": "b877be7c228f4cb6ae2936a86e349892",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_e9f5c3cc99f84ec09494d64088def04f", "ME_Mapping_f40b0bed8b56474c88d8f1f87c788191", "ME_Mapping_ccf07a68c9a14d38a7b13d27888cc98f"],
+            "parentId": null,
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "AS_Form_afa7c8207b6a41bc926ac7b1863cf874": {
+        "id": "AS_Form_afa7c8207b6a41bc926ac7b1863cf874",
+        "type": "ACTION_SEQUENCE",
+        "name": "onSkillMainMapping",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "SkillMainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c05a66a1fa7d441885077dd7cde965b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "_c2e0473faaac4d1fb972828576eeb5f4",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "navigationsource",
+                "leftValue": "(this.getPreviousForm() === \"MainMenuPage\") && this.navigationContext && this.navigationContext._meta_ && (this.navigationContext._meta_.widgetId ===  \"SkillsButton\") && (this.navigationContext._meta_.eventName ===  \"onClick\")",
+                "operator": "===",
+                "rightValue": "",
+                "leftItemKUID": "f134e15dcbe94fea890bc1888899dd9e",
+                "leftWidgetKUID": "i3399e8e3112469cb3dd97ddd380c72a",
+                "sequenceId": "AS_Button_i1269b8e967c414cbdb02baea0ae8be4",
+                "eventName": "onClick",
+                "widgetId": "SkillsButton"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "ADD_SNIPPET_c6fbb8b4dbef46fab1932734462508c9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

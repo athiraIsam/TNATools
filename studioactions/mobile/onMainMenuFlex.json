@@ -1,0 +1,58 @@
+{
+    "AS_FlexContainer_a12f0fbbe54c44dca4edfbbbc8252414": {
+        "id": "AS_FlexContainer_a12f0fbbe54c44dca4edfbbbc8252414",
+        "type": "ACTION_SEQUENCE",
+        "name": "onMainMenuFlex",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_eba519e0a195428382e60d823a518bf7",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "simple",
+            "datatype": "collection",
+            "value": "[]",
+            "parentId": null
+        }, {
+            "id": "ADD_SNIPPET_e9121ac1c8d54759898ffb6cd3ad2876",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flexMainTab1.homeBackground.opacity = 1 ;\nthis.view.flexMainTab2.profileBackground.opacity = 0; \nthis.view.flexMainTab3.reportBackground.opacity = 0;\nthis.view.flexMainTab4.aboutBackground.opacity = 0;\n\nuserProfile = this.navigationContext.variable_userProfile;",
+            "parentId": null
+        }, {
+            "id": "NAVIGATE_TO_FORM__d466e871767240bc923e05d898492118",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "MainMenuPage",
+            "formKUID": "f134e15dcbe94fea890bc1888899dd9e",
+            "mappings": {
+                "ME_Mapping_ja484d947bf84ddf8f2398e65229bd84": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_ja484d947bf84ddf8f2398e65229bd84",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": [],
+            "parentId": null,
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"flexMainTab1\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

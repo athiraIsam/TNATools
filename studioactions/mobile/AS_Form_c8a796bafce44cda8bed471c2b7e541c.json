@@ -1,0 +1,18 @@
+{
+    "AS_Form_c8a796bafce44cda8bed471c2b7e541c": {
+        "id": "AS_Form_c8a796bafce44cda8bed471c2b7e541c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "ProfileEditPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c19510e0912147dca654cbe7c380716a"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

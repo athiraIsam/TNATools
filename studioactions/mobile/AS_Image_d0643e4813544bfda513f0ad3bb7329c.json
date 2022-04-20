@@ -1,0 +1,24 @@
+{
+    "AS_Image_d0643e4813544bfda513f0ad3bb7329c": {
+        "id": "AS_Image_d0643e4813544bfda513f0ad3bb7329c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "imagesrc"
+        }, {
+            "datatype": "boolean",
+            "name": "issuccess"
+        }],
+        "contextObj": {
+            "name": "LoginPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e9004e7b2c6d47b1b18e2fa1ce9f0e48"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sa74900d1731431797b18aed96f53eb7",
+    "_text_": "Score Analysis",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "CopyTestDetailsText0de4fe41e8c8549",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b35718d4e10d4b198b18082c2ce33ffa",
+    "linkskin": "s9e6644329244a12a29f7445f43065b6",
+    "name": "kony.ui.RichText",
+    "parent": "FlexScoreAnalysisTitle",
+    "pf": "SkillEndOfQuestion",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

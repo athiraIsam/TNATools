@@ -1,0 +1,64 @@
+{
+    "AS_FlexContainer_gfb7abd956724b5e96847484128aa561": {
+        "id": "AS_FlexContainer_gfb7abd956724b5e96847484128aa561",
+        "type": "ACTION_SEQUENCE",
+        "name": "onProfileFlexClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "MainMenuPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f134e15dcbe94fea890bc1888899dd9e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_d5e31303599b4af0b89afb22e2accc90",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]",
+            "parentId": null
+        }, {
+            "id": "ADD_SNIPPET_fa473dde5e6f4707acb3abbcfd555cad",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flexMainTab1.homeBackground.opacity = 0 ;\nthis.view.flexMainTab2.profileBackground.opacity = 1; \nthis.view.flexMainTab3.reportBackground.opacity = 0;\nthis.view.flexMainTab4.aboutBackground.opacity = 0;\n\ntry{\n  userProfile = this.navigationContext.variable_userProfile;\n}\ncatch(ex)\n  {\n    userProfile = undefined;\n  }\n\t",
+            "parentId": null
+        }, {
+            "id": "NAVIGATE_TO_FORM__cc30ea48aaa94a278ea1ea72f37804ab",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "ProfilePage",
+            "formKUID": "haaf6ec101e343d29315a1967e7acf0d",
+            "mappings": {
+                "ME_Mapping_f4311739c1fe4105aa296af7f98dd276": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_f4311739c1fe4105aa296af7f98dd276",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_f4311739c1fe4105aa296af7f98dd276"],
+            "parentId": null,
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"flexMainTab2\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

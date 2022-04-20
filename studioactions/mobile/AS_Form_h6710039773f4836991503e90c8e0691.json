@@ -1,0 +1,18 @@
+{
+    "AS_Form_h6710039773f4836991503e90c8e0691": {
+        "id": "AS_Form_h6710039773f4836991503e90c8e0691",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "ProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "haaf6ec101e343d29315a1967e7acf0d"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "AS_Segment_db316706e3624f4a94a0d4d97177d918": {
+        "id": "AS_Segment_db316706e3624f4a94a0d4d97177d918",
+        "type": "ACTION_SEQUENCE",
+        "name": "onSkillRowClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "SkillMainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c05a66a1fa7d441885077dd7cde965b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_e3e72e184bfe4e3a9f411b86c05bb230",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]"
+        }, {
+            "id": "ADD_SNIPPET_ac35dadae0934b22a98853176a53d12b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "userProfile = this.navigationContext.variable_userProfile;"
+        }, {
+            "id": "NAVIGATE_TO_FORM__b269d389a22f49ee953416465a97ca47",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "SkillsOnRowClickPage",
+            "formKUID": "ecf3705d9fab44b3ae48a730cc05d0d9",
+            "mappings": {
+                "ME_Mapping_ec6b5817b0b44677b8f21b5e20e55225": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_ec6b5817b0b44677b8f21b5e20e55225",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_ec6b5817b0b44677b8f21b5e20e55225"],
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"\",\n        \"widgetId\": \"\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_skin_": "s7e21dc2b8154528b54db6df0457dca0",
+    "_text_": "Main Menu",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s76ab4e1d4014cc39cb41f0d6bcab64c",
+    "id": "ButtonBorder",
+    "ide_onClick": "AS_Button_feac2efd504e4327b535d75409209b3e",
+    "info": null,
+    "isvisible": true,
+    "kuid": "bc9e6d76576c49e6bd668cae3f7728ef",
+    "masterType": 1,
+    "name": "kony.ui.Button",
+    "parent": "MainMenu",
+    "pf": "SkillEndOfQuestion",
+    "wType": "Button",
+    "zindex": 1
+}

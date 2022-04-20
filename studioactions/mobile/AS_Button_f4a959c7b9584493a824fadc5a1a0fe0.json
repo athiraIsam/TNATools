@@ -1,0 +1,16 @@
+{
+    "AS_Button_f4a959c7b9584493a824fadc5a1a0fe0": {
+        "id": "AS_Button_f4a959c7b9584493a824fadc5a1a0fe0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d8bcc472da8e4e0f8a3ebd17b0e3fa40",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flexMainTab1.homeBackground.opacity = 1 ;\nthis.view.flexMainTab2.profileBackground.opacity = 0; \nthis.view.flexMainTab3.reportBackground.opacity = 0;\nthis.view.flexMainTab4.aboutBackground.opacity = 0;"
+        }]
+    }
+}

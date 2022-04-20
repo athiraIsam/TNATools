@@ -1,0 +1,26 @@
+{
+    "models": {
+        "mobile": {
+            "class": "GraphLinksModel",
+            "linkDataArray": [],
+            "nodeDataArray": [
+                {
+                    "formKUID": "c613e54522a94795aa07464b1637b951",
+                    "formName": "Form1",
+                    "isStartupForm": true,
+                    "key": "c613e54522a94795aa07464b1637b951",
+                    "loc": "0 0",
+                    "thumbnailURL": null
+                },
+                {
+                    "formKUID": "e9004e7b2c6d47b1b18e2fa1ce9f0e48",
+                    "formName": "LoginPage",
+                    "isStartupForm": false,
+                    "key": "e9004e7b2c6d47b1b18e2fa1ce9f0e48",
+                    "loc": "188 184.845263671875",
+                    "thumbnailURL": null
+                }
+            ]
+        }
+    }
+}

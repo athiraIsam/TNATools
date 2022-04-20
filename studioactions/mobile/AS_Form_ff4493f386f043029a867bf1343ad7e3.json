@@ -1,0 +1,18 @@
+{
+    "AS_Form_ff4493f386f043029a867bf1343ad7e3": {
+        "id": "AS_Form_ff4493f386f043029a867bf1343ad7e3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "SkillEndOfQuestion",
+            "type": "forms",
+            "platform": null,
+            "KUID": "b877be7c228f4cb6ae2936a86e349892"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

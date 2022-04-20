@@ -1,0 +1,22 @@
+{
+    "AS_Button_aac42d7e4da84f379f620be8983c9305": {
+        "id": "AS_Button_aac42d7e4da84f379f620be8983c9305",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_aa02936b284240f58a49694b0f0dceaa",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "LoginPage",
+            "formKUID": "e9004e7b2c6d47b1b18e2fa1ce9f0e48",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "",
+            "isCustomInput": false
+        }]
+    }
+}

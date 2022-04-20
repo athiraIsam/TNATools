@@ -1,0 +1,86 @@
+{
+    "AS_Button_fc0b5227c1e74fa5998197d60347e39c": {
+        "id": "AS_Button_fc0b5227c1e74fa5998197d60347e39c",
+        "type": "ACTION_SEQUENCE",
+        "name": "onSkillStartClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "SkillsOnRowClickPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ecf3705d9fab44b3ae48a730cc05d0d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_cae31ccd153942b1b19655fa5ccee6a2",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_hb99c80230ac4b7db85f4e46b152edc0",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "skillList",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]"
+        }, {
+            "id": "ADD_SNIPPET_fbab4bb407374243ba6a94045910e204",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "userProfile = this.navigationContext.variable_userProfile;\nskillList = this.navigationContext.skillList_selectedRowItems;"
+        }, {
+            "id": "NAVIGATE_TO_FORM__a7d37fdaf5b648e289722530192c2cb5",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "skillQuestionPage",
+            "formKUID": "h8c0b06650ca478e8756424da975d413",
+            "mappings": {
+                "ME_Mapping_b28ee61dfcbf4409b0359af3d93bc498": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_b28ee61dfcbf4409b0359af3d93bc498",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "skillList",
+                        "propertyKey": "variable_skillList",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_cdfcb71ffdad47dd9f026b8780ba7723": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_cdfcb71ffdad47dd9f026b8780ba7723",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_b28ee61dfcbf4409b0359af3d93bc498", "ME_Mapping_cdfcb71ffdad47dd9f026b8780ba7723"],
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_skillList\": skillList,\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"ButtonBorder\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

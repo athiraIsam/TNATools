@@ -1,0 +1,18 @@
+{
+    "AS_Form_b8d05332d8da4599a3ff30d4f17d3156": {
+        "id": "AS_Form_b8d05332d8da4599a3ff30d4f17d3156",
+        "type": "ACTION_SEQUENCE",
+        "name": "onMainInitialized",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "a76731947f0e4f1d84bb5bc6ee473519"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

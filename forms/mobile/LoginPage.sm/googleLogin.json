@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": "20"
+    },
+    "_skin_": "sdb9cf089cfe48d6be79ad7554c16eba",
+    "_src_": "googleroundicon.png",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "id": "googleLogin",
+    "ide_onDownloadComplete": "AS_Image_d0643e4813544bfda513f0ad3bb7329c",
+    "ide_onTouchStart": "AS_Image_cc67ea8af89e41a49292bc9edb38ca47",
+    "imagescalemode": 1,
+    "info": null,
+    "invokedProperty": "src",
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "j8f26813fc1544f0a6004f41d96955b1",
+    "name": "kony.ui.Image2",
+    "parent": "flexloginOptions",
+    "pf": "LoginPage",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 2
+}

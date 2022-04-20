@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_b81d0a17cd944981842003069b235e33": {
+        "id": "AS_FlexContainer_b81d0a17cd944981842003069b235e33",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_ide_onClick_ff1aa733860e44288e23eadd30f2709d",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "users",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]"
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_d7757fc405604aa897b95e9b14578ef4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flexMainTab1.homeBackground.opacity = 0 ;\nthis.view.flexMainTab2.profileBackground.opacity = 1; \nthis.view.flexMainTab3.reportBackground.opacity = 0;\nthis.view.flexMainTab4.aboutBackground.opacity = 0;\n"
+        }]
+    }
+}

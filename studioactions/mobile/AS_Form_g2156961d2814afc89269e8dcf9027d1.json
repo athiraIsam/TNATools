@@ -1,0 +1,18 @@
+{
+    "AS_Form_g2156961d2814afc89269e8dcf9027d1": {
+        "id": "AS_Form_g2156961d2814afc89269e8dcf9027d1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "SkillsOnRowClickPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ecf3705d9fab44b3ae48a730cc05d0d9"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "AS_Button_feac2efd504e4327b535d75409209b3e": {
+        "id": "AS_Button_feac2efd504e4327b535d75409209b3e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_e0c167453b9346028b02398283a24737",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]"
+        }, {
+            "id": "ADD_SNIPPET_e29d9daac0ef44a68c5bf404696a283c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "userProfile = this.navigationContext.variable_userProfile;"
+        }, {
+            "id": "NAVIGATE_TO_FORM__b1d2210c19264c2492cc79e252d4fba8",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "MainMenuPage",
+            "formKUID": "f134e15dcbe94fea890bc1888899dd9e",
+            "mappings": {
+                "ME_Mapping_h8ef7812532945828bed6188a40b0cba": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_h8ef7812532945828bed6188a40b0cba",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_h8ef7812532945828bed6188a40b0cba"],
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"ButtonBorder\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

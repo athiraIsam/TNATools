@@ -1,0 +1,245 @@
+{
+    "AS_Form_ffac7313e6b34518a47f41ad6cc68433": {
+        "id": "AS_Form_ffac7313e6b34518a47f41ad6cc68433",
+        "type": "ACTION_SEQUENCE",
+        "name": "onProfileMapping",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "ProfilePage",
+            "type": "forms",
+            "platform": null,
+            "KUID": "haaf6ec101e343d29315a1967e7acf0d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_c6cb1cf43e834681861e5d736e1da8f1",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "IF_CONDITION_ief0b56674414497a71ff27fd733a155",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "navigationsource",
+                "leftValue": "(this.getPreviousForm() === \"MainMenuPage\") && this.navigationContext && this.navigationContext._meta_ && (this.navigationContext._meta_.widgetId ===  \"flexMainTab2\") && (this.navigationContext._meta_.eventName ===  \"onClick\")",
+                "operator": "===",
+                "rightValue": "",
+                "leftItemKUID": "f134e15dcbe94fea890bc1888899dd9e",
+                "leftWidgetKUID": "d5a7a55951e64831bd7dbd8d3686f63b",
+                "sequenceId": "AS_FlexContainer_gfb7abd956724b5e96847484128aa561",
+                "eventName": "onClick",
+                "widgetId": "flexMainTab2"
+            }, {
+                "leftValueType": "value",
+                "leftValue": "this.navigationContext.variable_userProfile",
+                "operator": "!==",
+                "rightValueType": "value",
+                "rightValue": "undefined"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "_ca3a7fee863c4f17aaa1061ce55c503c",
+            "type": "ELSE_IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "navigationsource",
+                "leftValue": "(this.getPreviousForm() === \"MainMenuPage\") && this.navigationContext && this.navigationContext._meta_ && (this.navigationContext._meta_.widgetId ===  \"profileBackground\") && (this.navigationContext._meta_.eventName ===  \"onClick\")",
+                "operator": "===",
+                "rightValue": "",
+                "leftItemKUID": "f134e15dcbe94fea890bc1888899dd9e",
+                "leftWidgetKUID": "befad2eaa53c482b838488c0e89f7e4c",
+                "sequenceId": "AS_Button_e746225a629b4340b57a05bf21c9fa5c",
+                "eventName": "onClick",
+                "widgetId": "profileBackground"
+            }, {
+                "leftValueType": "value",
+                "leftValue": "this.navigationContext.variable_userProfile",
+                "operator": "!==",
+                "rightValueType": "value",
+                "rightValue": "undefined"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_efdb7504730a49a3ac166680b58800e0",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "lastName",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": "_ca3a7fee863c4f17aaa1061ce55c503c",
+            "callbackType": null
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_c1a58505489d42c2a25cbca159b93a4e",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "firstName",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": "_ca3a7fee863c4f17aaa1061ce55c503c",
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET_a9ca25dace75407dbdd8c8696ff3ebb9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\nuserProfile = this.navigationContext.variable_userProfile;\n  \nfirstName = userProfile[\"firstName\"];\nlastName = userProfile[\"lastName\"];\n}\ncatch(ex)\n  {\n    userProfile = undefined;\n  }\n\t\n",
+            "parentId": "_ca3a7fee863c4f17aaa1061ce55c503c",
+            "callbackType": null
+        }, {
+            "id": "ADD_MAPPING_df59340784354db59d0d5a685a3430e6",
+            "type": "ADD_MAPPING",
+            "mappings": {
+                "ME_Mapping_iee9e007eddd4f06a459c461f33c8650": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_iee9e007eddd4f06a459c461f33c8650",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "firstName",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "firstNameInput",
+                        "widgetPath": "this.view.firstNameInput",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "ProfilePage",
+                        "widgetKUID": "f55212d4fee04f9d950eff0c62711742",
+                        "itemKUID": "haaf6ec101e343d29315a1967e7acf0d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_e0c48c4ddaa8491b9b311434f12268ad": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_e0c48c4ddaa8491b9b311434f12268ad",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "lastName",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblLastName",
+                        "widgetPath": "this.view.lblLastName",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "ProfilePage",
+                        "widgetKUID": "aa8a2155db3a4dd6b550adb13ef0fab5",
+                        "itemKUID": "haaf6ec101e343d29315a1967e7acf0d",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_iee9e007eddd4f06a459c461f33c8650", "ME_Mapping_e0c48c4ddaa8491b9b311434f12268ad"],
+            "parentId": "_ca3a7fee863c4f17aaa1061ce55c503c",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_b9c6de059e794c018ee1563d7e9e7184",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "lastName",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": "IF_CONDITION_ief0b56674414497a71ff27fd733a155",
+            "callbackType": null
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_i239b483bdd44497badd71c709f3037b",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "firstName",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": "IF_CONDITION_ief0b56674414497a71ff27fd733a155",
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET_d84f12c2d987453590a290cdf6693671",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\ntry{\n  userProfile = this.navigationContext.variable_userProfile;\n  \n firstName = userProfile[\"firstName\"];\nlastName = userProfile[\"lastName\"];\n}\ncatch(ex)\n  {\n    userProfile = undefined;\n  }\n\t\n\n\n",
+            "parentId": "IF_CONDITION_ief0b56674414497a71ff27fd733a155",
+            "callbackType": null
+        }, {
+            "id": "ADD_MAPPING_b68a700435df456d94c854c6bb70a634",
+            "type": "ADD_MAPPING",
+            "mappings": {
+                "ME_Mapping_b0bd7ff081f0474580104dec976f483d": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_b0bd7ff081f0474580104dec976f483d",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "firstName",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "firstNameInput",
+                        "widgetPath": "this.view.firstNameInput",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "ProfilePage",
+                        "widgetKUID": "f55212d4fee04f9d950eff0c62711742",
+                        "itemKUID": "haaf6ec101e343d29315a1967e7acf0d",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_bd2acc2fb91246d7a9cc6280408a5ed9": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_bd2acc2fb91246d7a9cc6280408a5ed9",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "lastName",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblLastName",
+                        "widgetPath": "this.view.lblLastName",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "ProfilePage",
+                        "widgetKUID": "aa8a2155db3a4dd6b550adb13ef0fab5",
+                        "itemKUID": "haaf6ec101e343d29315a1967e7acf0d",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_b0bd7ff081f0474580104dec976f483d", "ME_Mapping_bd2acc2fb91246d7a9cc6280408a5ed9"],
+            "parentId": "IF_CONDITION_ief0b56674414497a71ff27fd733a155",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

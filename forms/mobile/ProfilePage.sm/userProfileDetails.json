@@ -1,0 +1,84 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s4c4bb3237ff4efda2f626d3fb4d76c4",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
+    "canUpdateUI": true,
+    "children": [
+        "flxImageName",
+        "flxLastName",
+        "flxBirthday",
+        "flxEmail",
+        "flxTelephone",
+        "flxCompanyName",
+        "flxRole",
+        "flxContactInfo",
+        "firstName",
+        "flxSeperator",
+        "flxSeperator1",
+        "flxSeperator2",
+        "flxSeperator3",
+        "flxSeperator4",
+        "flxSeperator5",
+        "flxSeperator6",
+        "flxSeperator7",
+        "flxSeperator8",
+        "LogOutButton"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "horizontalscrollindicator": true,
+    "id": "userProfileDetails",
+    "info": null,
+    "isvisible": true,
+    "kuid": "hb0d0e4f4b434d52b71410ce6f52cc5b",
+    "layouttype": 2,
+    "masterType": 1,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "ProfilePage",
+    "pf": "ProfilePage",
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": true,
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1,
+    "zindex": 2
+}

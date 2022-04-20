@@ -1,0 +1,18 @@
+{
+    "AS_Form_i2cef8273f3b4988b2db72660d5ca682": {
+        "id": "AS_Form_i2cef8273f3b4988b2db72660d5ca682",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "MainMenuPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f134e15dcbe94fea890bc1888899dd9e"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

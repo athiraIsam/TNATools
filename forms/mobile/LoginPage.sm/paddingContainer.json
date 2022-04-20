@@ -1,0 +1,68 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "95.31%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "number",
+        "value": "40"
+    },
+    "_skin_": "sb1383433c7046169e6ce0b19973edd3",
+    "_top_": {
+        "type": "string",
+        "value": "38dp"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "loginTitleContainer",
+        "emailFieldContainer",
+        "passwordFIeldContainer",
+        "loginButton",
+        "labelSignUp",
+        "labelForgotPassword",
+        "labelSignIn",
+        "rightLine",
+        "leftLine",
+        "flexloginOptions"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "paddingContainer",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ad7778d3a0424b8ca2f6d06cb3f6ca56",
+    "layouttype": 4,
+    "masterType": 1,
+    "name": "kony.ui.FlexContainer",
+    "parent": "masterContainer",
+    "pf": "LoginPage",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

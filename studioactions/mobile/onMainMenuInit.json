@@ -1,0 +1,24 @@
+{
+    "AS_Form_a518122b09354d5bb7a8a2305a67ac7a": {
+        "id": "AS_Form_a518122b09354d5bb7a8a2305a67ac7a",
+        "type": "ACTION_SEQUENCE",
+        "name": "onMainMenuInit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "MainMenuPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f134e15dcbe94fea890bc1888899dd9e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_hfffea055497442c922d26ed69b5d34e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flexMainTab1.homeBackground.opacity = 1 ;\nthis.view.flexMainTab2.profileBackground.opacity = 0; \nthis.view.flexMainTab3.reportBackground.opacity = 0;\nthis.view.flexMainTab4.aboutBackground.opacity = 0;\n",
+            "parentId": null
+        }]
+    }
+}

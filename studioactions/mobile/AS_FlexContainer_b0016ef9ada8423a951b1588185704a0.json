@@ -1,0 +1,16 @@
+{
+    "AS_FlexContainer_b0016ef9ada8423a951b1588185704a0": {
+        "id": "AS_FlexContainer_b0016ef9ada8423a951b1588185704a0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d0658dd5213c4f3c8c1890e010ff9b83",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flexMainTab1.homeBackground.opacity = 0 ;\nthis.view.flexMainTab2.profileBackground.opacity = 0; \nthis.view.flexMainTab3.reportBackground.opacity = 1;\nthis.view.flexMainTab4.aboutBackground.opacity = 0;"
+        }]
+    }
+}

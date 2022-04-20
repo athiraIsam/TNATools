@@ -1,0 +1,18 @@
+{
+    "AS_Form_c2987a4891ed44eb94b229eaec706da3": {
+        "id": "AS_Form_c2987a4891ed44eb94b229eaec706da3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "skillQuestionPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h8c0b06650ca478e8756424da975d413"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

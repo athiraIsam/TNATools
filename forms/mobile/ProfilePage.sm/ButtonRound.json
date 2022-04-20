@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_skin_": "sd1be63cb38649d6a152ca53ab2e0957",
+    "_text_": "Log Out",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s6dcc623498b4e22852b373dbb4249c9",
+    "id": "ButtonRound",
+    "ide_onClick": "AS_Button_aac42d7e4da84f379f620be8983c9305",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ic2afa9458904bf98b93768673a754a9",
+    "masterType": 1,
+    "name": "kony.ui.Button",
+    "parent": "LogOutButton",
+    "pf": "ProfilePage",
+    "wType": "Button",
+    "zindex": 1
+}

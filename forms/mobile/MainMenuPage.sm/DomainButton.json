@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_skin_": "s4fdd45d7372452d8f18eace6c7e866f",
+    "_text_": "Domain",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s0fb9562105140c3b64f09729b2cea7c",
+    "id": "DomainButton",
+    "ide_onClick": "AS_Button_d81c57553ebc49ed9b87b3aa56c98024",
+    "info": null,
+    "isvisible": true,
+    "kuid": "f771da8cec944f58a273b5de252c75d5",
+    "masterType": 1,
+    "name": "kony.ui.Button",
+    "parent": "DomainBorderRound",
+    "pf": "MainMenuPage",
+    "wType": "Button",
+    "zindex": 1
+}

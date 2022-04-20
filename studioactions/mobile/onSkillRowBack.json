@@ -1,0 +1,67 @@
+{
+    "AS_Image_cc5875ad7baf4109a40de05f27cc598b": {
+        "id": "AS_Image_cc5875ad7baf4109a40de05f27cc598b",
+        "type": "ACTION_SEQUENCE",
+        "name": "onSkillRowBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "SkillsOnRowClickPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ecf3705d9fab44b3ae48a730cc05d0d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_gf7cb25eb4e24a3f87a0d5e476db094b",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]"
+        }, {
+            "id": "ADD_SNIPPET_c4d36f307a3945a4a3f7152cb385f428",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "userProfile = this.navigationContext.userProfile;"
+        }, {
+            "id": "NAVIGATE_TO_FORM__c76dc1f7683641958dae1e656c240dc0",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "SkillMainPage",
+            "formKUID": "c05a66a1fa7d441885077dd7cde965b5",
+            "mappings": {
+                "ME_Mapping_edca2dc8cb6c484b915551d917ad0970": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_edca2dc8cb6c484b915551d917ad0970",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_edca2dc8cb6c484b915551d917ad0970"],
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onTouchStart\",\n        \"widgetId\": \"backArrow\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "AS_Button_fb5c1942e3ff472c8e6ff4117a1187b2": {
+        "id": "AS_Button_fb5c1942e3ff472c8e6ff4117a1187b2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "a76731947f0e4f1d84bb5bc6ee473519"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ac41fbfa9e824c8b9d2a98ff0c528de2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flexMainTab1.homeBackground.opacity = 1 ;\nthis.view.flexMainTab2.profileBackground.opacity = 0; \nthis.view.flexMainTab3.reportBackground.opacity = 0;\nthis.view.flexMainTab4.aboutBackground.opacity = 0;",
+            "parentId": null
+        }]
+    }
+}

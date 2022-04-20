@@ -1,0 +1,33 @@
+{
+    "AS_Button_ee6f0a23a9ef4e4e96266baadcff37be": {
+        "id": "AS_Button_ee6f0a23a9ef4e4e96266baadcff37be",
+        "type": "ACTION_SEQUENCE",
+        "name": "onFbClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "LoginPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e9004e7b2c6d47b1b18e2fa1ce9f0e48"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_fed406c62b4a45b6a87523effb729462",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Fb Login",
+            "yesLabel": "Ok",
+            "alertMessage": "Coming Soon",
+            "messageType": "constant",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "AS_Button_i6a426709dd14e54bc69597ddd27dcea": {
+        "id": "AS_Button_i6a426709dd14e54bc69597ddd27dcea",
+        "type": "ACTION_SEQUENCE",
+        "name": "onAnswer3Click",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "skillQuestionPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h8c0b06650ca478e8756424da975d413"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b09e3095488e4af6b2bd9d1f72efcf18",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.answer1.SquaredBtn1.opacity = 1.0;\nthis.view.answer2.SquaredBtn2.opacity = 1.0;\nthis.view.answer3.SquaredBtn3.opacity = 0.2;\n\nvar number = numberOfQuestion -1;\nvar strCorrectAnswer = \"CorrectAnswer\" +number.toString();\nvar correctAnswer = skillInfo[0][strCorrectAnswer];",
+            "parentId": null
+        }, {
+            "id": "IF_CONDITION_f2857b6cb9644653b8c82e3d6b413093",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "value",
+                "leftValue": "  this.view.answer3.SquaredBtn3.text",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "correctAnswer"
+            }],
+            "parentId": null,
+            "criteria": "all"
+        }, {
+            "id": "ADD_SNIPPET_jc4377c626ed4842aebaeae3546a00f3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "answerPerTotal++;",
+            "parentId": "IF_CONDITION_f2857b6cb9644653b8c82e3d6b413093",
+            "callbackType": null
+        }]
+    }
+}

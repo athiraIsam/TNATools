@@ -1,0 +1,50 @@
+{
+    "AS_Form_f532d20d114045caad4f3ae3983f70b8": {
+        "id": "AS_Form_f532d20d114045caad4f3ae3983f70b8",
+        "type": "ACTION_SEQUENCE",
+        "name": "onStartQuestionMapping",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "skillQuestionPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h8c0b06650ca478e8756424da975d413"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_g724d8dc2cda4270bf872e9b133eb62f",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "numberOfQuestion",
+            "isGlobal": true,
+            "valuetype": "simple",
+            "datatype": "number",
+            "value": "2"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_f578a6ce75bb40b1950d61a6b9c15cca",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "answerPerTotal",
+            "isGlobal": true,
+            "valuetype": "simple",
+            "datatype": "number",
+            "value": "0"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_ffe595dd9a9e4c86baf7db797a636e75",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "skillInfo",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET_aaf9fb2ddf0a47f8805566b9e7336cc8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "skillInfo = this.navigationContext.variable_skillList;\n    //display 1st question\nvar strQuestion = \"Question1\";\nvar strAnswer1 = \"Answer11\";\nvar strAnswer2 = \"Answer12\";\nvar strAnswer3 = \"Answer13\"\n    //var strCorrectAnswer = \"CorrectAnswer1\";\nthis.view.questionLabel.text = skillInfo[0][strQuestion];\nthis.view.answer1.SquaredBtn1.text = skillInfo[0][strAnswer1];\nthis.view.answer2.SquaredBtn2.text = skillInfo[0][strAnswer2];\nthis.view.answer3.SquaredBtn3.text = skillInfo[0][strAnswer3];",
+            "parentId": null
+        }]
+    }
+}

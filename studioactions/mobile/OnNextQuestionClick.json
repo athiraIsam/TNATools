@@ -1,0 +1,157 @@
+{
+    "AS_Button_gc13006f593c47f197b555d30b9dd134": {
+        "id": "AS_Button_gc13006f593c47f197b555d30b9dd134",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnNextQuestionClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "skillQuestionPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h8c0b06650ca478e8756424da975d413"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_aa7995716a9747608acfab0729d47374",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.answer1.SquaredBtn1.opacity = 1.0;\nthis.view.answer2.SquaredBtn2.opacity = 1.0;\nthis.view.answer3.SquaredBtn3.opacity = 1.0;\n\n",
+            "parentId": null
+        }, {
+            "id": "_e17542eb2788446fa353ee1b94df406a",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "value",
+                "leftValue": "numberOfQuestion",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "2"
+            }],
+            "parentId": null,
+            "criteria": "all"
+        }, {
+            "id": "_i9ea05bf180f47fc89bf3ff7cc77b406",
+            "type": "ELSE_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "",
+                "operator": "===",
+                "rightValueType": "widgetprop",
+                "rightValue": ""
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_eeb21f40a7e2405c9929fcf47c4ac026",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "skillList",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]",
+            "parentId": "_i9ea05bf180f47fc89bf3ff7cc77b406",
+            "callbackType": null
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_eabd99f562044d12b6c19aec28432a08",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "userProfile",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "[]",
+            "parentId": "_i9ea05bf180f47fc89bf3ff7cc77b406",
+            "callbackType": null
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_a20e315752224ba495408a404d52b360",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "answerPerTotal",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "number",
+            "value": "0",
+            "parentId": "_i9ea05bf180f47fc89bf3ff7cc77b406",
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET_hf70ca23c47f4f5c96e725412fbb0771",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "skillList = skillInfo;\nuserProfile = this.navigationContext.variable_userProfile;\nthis.answerPerTotal = answerPerTotal;\n",
+            "parentId": "_i9ea05bf180f47fc89bf3ff7cc77b406",
+            "callbackType": null
+        }, {
+            "id": "NAVIGATE_TO_FORM__a77b8c6fd47b4269ac526af33b0969ea",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "SkillEndOfQuestion",
+            "formKUID": "b877be7c228f4cb6ae2936a86e349892",
+            "mappings": {
+                "ME_Mapping_hed72f42a08a4b22a47fbad4599dc291": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_hed72f42a08a4b22a47fbad4599dc291",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "answerPerTotal",
+                        "propertyKey": "variable_answerPerTotal",
+                        "dataType": "number",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_gb463afc30f44077bce4db14640f5542": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_gb463afc30f44077bce4db14640f5542",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "skillList",
+                        "propertyKey": "variable_skillList",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ac70826d24ed4166a03c6177c4427b46": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_ac70826d24ed4166a03c6177c4427b46",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "userProfile",
+                        "propertyKey": "variable_userProfile",
+                        "dataType": "collection",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_hed72f42a08a4b22a47fbad4599dc291", "ME_Mapping_gb463afc30f44077bce4db14640f5542", "ME_Mapping_ac70826d24ed4166a03c6177c4427b46"],
+            "parentId": "_i9ea05bf180f47fc89bf3ff7cc77b406",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"variable_answerPerTotal\": answerPerTotal,\n    \"variable_skillList\": skillList,\n    \"variable_userProfile\": userProfile,\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"ButtonBorder\"\n    }\n}",
+            "isCustomInput": false
+        }, {
+            "id": "ADD_SNIPPET_i581c14e76f34ec186e74cde9488b5b8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var strQuestion = \"Question\" + numberOfQuestion.toString();\nvar strAnswer1 = \"Answer\" + numberOfQuestion.toString() + \"1\";\nvar strAnswer2 = \"Answer\" + numberOfQuestion.toString() + \"2\";\nvar strAnswer3 = \"Answer\" + numberOfQuestion.toString() + \"3\";\nvar strCorrectAnswer = \"CorrectAnswer\" + numberOfQuestion.toString();\n\nthis.view.questionLabel.text = skillInfo[0][strQuestion];\nthis.view.answer1.SquaredBtn1.text = skillInfo[0][strAnswer1];\nthis.view.answer2.SquaredBtn2.text = skillInfo[0][strAnswer2];\nthis.view.answer3.SquaredBtn3.text = skillInfo[0][strAnswer3];\nnumberOfQuestion++;\n      ",
+            "parentId": "_e17542eb2788446fa353ee1b94df406a",
+            "callbackType": null
+        }]
+    }
+}

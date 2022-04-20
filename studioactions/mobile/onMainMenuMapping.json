@@ -1,0 +1,118 @@
+{
+    "AS_Form_gf69283ec2864f749348937cf66957bf": {
+        "id": "AS_Form_gf69283ec2864f749348937cf66957bf",
+        "type": "ACTION_SEQUENCE",
+        "name": "onMainMenuMapping",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "MainMenuPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f134e15dcbe94fea890bc1888899dd9e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_c7b8e05dfaaf45b580aadd97e258bb59",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "firstName",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\"",
+            "parentId": null
+        }, {
+            "id": "IF_CONDITION_b465dceb85654cbdb94ad89fff687a5c",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "navigationsource",
+                "leftValue": "(this.getPreviousForm() === \"LoginPage\") && this.navigationContext && this.navigationContext._meta_ && (this.navigationContext._meta_.widgetId ===  \"linkedInLoginBackground\") && (this.navigationContext._meta_.eventName ===  \"onClick\")",
+                "operator": "===",
+                "rightValue": "",
+                "leftItemKUID": "e9004e7b2c6d47b1b18e2fa1ce9f0e48",
+                "leftWidgetKUID": "ic2fad8fd3724f57a80753a771f51715",
+                "sequenceId": "AS_Button_d4e3d8e93c2a43b5a14c5a5251eab7f2",
+                "eventName": "onClick",
+                "widgetId": "linkedInLoginBackground"
+            }],
+            "parentId": null,
+            "criteria": "all"
+        }, {
+            "id": "_dda0a03e95b74ce9a4ff870f73d4a657",
+            "type": "ELSE_IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "navigationsource",
+                "leftValue": "(this.getPreviousForm() === \"ProfilePage\") && this.navigationContext && this.navigationContext._meta_ && (this.navigationContext._meta_.widgetId ===  \"flexMainTab1\") && (this.navigationContext._meta_.eventName ===  \"onClick\")",
+                "operator": "===",
+                "rightValue": "",
+                "leftItemKUID": "haaf6ec101e343d29315a1967e7acf0d",
+                "leftWidgetKUID": "c6fee91e392a4281a084af6fc8eb31df",
+                "sequenceId": "AS_FlexContainer_a12f0fbbe54c44dca4edfbbbc8252414",
+                "eventName": "onClick",
+                "widgetId": "flexMainTab1"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "ADD_SNIPPET_d57f057361494ca4ab84d691b62f2c41",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\nuserProfile = this.navigationContext.variable_userProfile;\nfirstName = userProfile[\"firstName\"];\n\nself.view.firstName.text = firstName;\n\n}\ncatch(ex)\n  {\n    userProfile = undefined;\n  }\n\t",
+            "parentId": "_dda0a03e95b74ce9a4ff870f73d4a657",
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET_d8aef9f5602f41d8b575877785d1c1ef",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\ntry{\nuserProfile = this.navigationContext.variable_userProfile;\nfirstName = userProfile[\"firstName\"];\n\nself.view.firstName.text = firstName;\n\n}\ncatch(ex)\n  {\n    userProfile = undefined;\n  }\n\t\n",
+            "parentId": "IF_CONDITION_b465dceb85654cbdb94ad89fff687a5c",
+            "callbackType": null
+        }, {
+            "id": "ELSE_IF_CONDITION_haed674914704f218ecad17459319fe5",
+            "type": "ELSE_IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "navigationsource",
+                "leftValue": "(this.getPreviousForm() === \"ProfilePage\") && this.navigationContext && this.navigationContext._meta_ && (this.navigationContext._meta_.widgetId ===  \"homeBackground\") && (this.navigationContext._meta_.eventName ===  \"onClick\")",
+                "operator": "===",
+                "rightValue": "",
+                "leftItemKUID": "haaf6ec101e343d29315a1967e7acf0d",
+                "leftWidgetKUID": "dff958d72e5b418880482c72d9ff0e51",
+                "sequenceId": "AS_Button_da6385cacdf54db49067138dba5e3c3a",
+                "eventName": "onClick",
+                "widgetId": "homeBackground"
+            }],
+            "parentId": null,
+            "criteria": "all"
+        }, {
+            "id": "ELSE_IF_CONDITION_fa5e5e9c730841499fdac831fcf50828",
+            "type": "ELSE_IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "navigationsource",
+                "leftValue": "(this.getPreviousForm() === \"SkillMainPage\") && this.navigationContext && this.navigationContext._meta_ && (this.navigationContext._meta_.widgetId ===  \"backArrow\") && (this.navigationContext._meta_.eventName ===  \"onTouchStart\")",
+                "operator": "===",
+                "rightValue": "",
+                "leftItemKUID": "c05a66a1fa7d441885077dd7cde965b5",
+                "leftWidgetKUID": "ffa1c19500114015b953f9f53a510b9b",
+                "sequenceId": "AS_Image_fa434a7d44f345f5a5d128fe7b245533",
+                "eventName": "onTouchStart",
+                "widgetId": "backArrow"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "ADD_SNIPPET_h56dd8109f9648b8969c0bc5eea2342e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\nuserProfile = this.navigationContext.variable_userProfile;\nfirstName = userProfile[\"firstName\"];\n\nself.view.firstName.text = firstName;\n\n}\ncatch(ex)\n  {\n    userProfile = undefined;\n  }\n\t",
+            "parentId": "ELSE_IF_CONDITION_fa5e5e9c730841499fdac831fcf50828",
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET_fdc8a139b42b48388b39c66bf731ece1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\nuserProfile = this.navigationContext.variable_userProfile;\nfirstName = userProfile[\"firstName\"];\n\nself.view.firstName.text = firstName;\n\n}\ncatch(ex)\n  {\n    userProfile = undefined;\n  }\n\t",
+            "parentId": "ELSE_IF_CONDITION_haed674914704f218ecad17459319fe5",
+            "callbackType": null
+        }]
+    }
+}
